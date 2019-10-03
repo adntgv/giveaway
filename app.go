@@ -26,7 +26,7 @@ type Session struct {
 type App struct {
 	//ex: instagram.com/p/{shortcode}/...
 	insta   *ig.Instagram
-	session Session
+	session Session `json:"session"`
 }
 
 func (app *App) GetCommenters() ([]string, error) {
